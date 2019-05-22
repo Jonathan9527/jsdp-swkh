@@ -1,0 +1,23 @@
+.menu-tree {
+  width: 280px;
+  max-width: 280px;
+  color: #333;
+  background-color: #EAF3FA;
+  border-radius: 3px;
+  padding: 20px 15px;
+
+  .menu-btn {
+    margin-bottom: 20px;
+    display: flex;
+    //flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    .el-button--small {
+      flex: 0 0 22%;
+      font-size: 16px;
+      padding: 8px 10px;
+    }
+  }
+}

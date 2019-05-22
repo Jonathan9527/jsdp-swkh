@@ -1,0 +1,341 @@
+.clearFix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+$themeColor: #6ca5ff;
+
+@mixin flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+@mixin flex-items {
+  @include flex;
+  align-items: center;
+}
+
+@mixin flex-justify {
+  @include flex;
+  justify-content: center;
+}
+
+@mixin items-justify {
+  @include flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin background_img($img) {
+  background: url($img) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+@mixin border_radius($p) {
+  -webkit-border-radius: $p;
+  -moz-border-radius: $p;
+  border-radius: $p;
+}
+
+@mixin box_shadow($n, $p) {
+  -webkit-box-shadow: 0 1px $p 0 $n;
+  -moz-box-shadow: 0 1px $p 0 $n;
+  box-shadow: 0 1px $p 0 $n;
+}
+
+@mixin transition {
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+@mixin bgPic($img) {
+  background: url($img) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+@mixin line-clamp($n) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $n;
+}
+
+/* hyg弹窗修改 */
+.whetherh {
+  padding-bottom: 25px;
+  .el-message-box__header {
+    text-align: center !important;
+    color: #555 !important;
+    background: #eaeaea;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .el-message-box__title {
+    color: #555555;
+    font-weight: 600 !important;
+  }
+
+  .el-message-box__headerbtn {
+    display: block;
+  }
+
+  .el-message-box__btns {
+    text-align: center;
+  }
+
+  .el-message-box__btns>.el-button:nth-child(1) {
+    background: #FFFFFF;
+    color: #666;
+    padding: 11px 20px;
+    font-size: 14px;
+    border: 1px solid #CCC;
+  }
+
+  .el-message-box__btns>.el-button:nth-child(1):hover {
+    background: #ecf5ff;
+    color: #409eff;
+  }
+
+  .el-message-box__btns button:nth-child(2) {
+    background: #0841B4;
+    border: none;
+    color: #FFF;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .el-message-box__btns button:nth-child(2):hover {
+    background: #1f6de2;
+    border: none;
+    color: #FFF;
+  }
+
+  .el-message-box__btns button:nth-child(2) {
+    margin-left: 30px;
+  }
+
+  .el-message-box__content {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 25px 15px;
+  }
+}
+
+.proupClass {
+  .el-dialog__header {
+    text-align: center;
+    background: #eaeaea;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .el-dialog__headerbtn .el-dialog__close {
+    display: block;
+  }
+
+  .el-dialog__header span {
+    color: #555;
+    font-weight: 600;
+  }
+
+  .dialog-footer {
+    text-align: center;
+  }
+
+  .el-dialog__footer {
+    text-align: center;
+  }
+
+  .el-button+.el-button {
+    margin-left: 30px;
+  }
+}
+
+.proupbtnquxiao {
+  background: #FFFFFF !important;
+  color: #666 !important;
+  padding: 11px 20px !important;
+  border: 1px solid #CCC;
+}
+
+.proupbtnquxiao:hover {
+  background: #ecf5ff !important;
+  color: #409eff !important;
+}
+
+.proupbtnqueding {
+  background: #0841B4;
+  border: none;
+}
+
+.proupbtnqueding:hover {
+  background: #1f6de2;
+  border: none;
+}
+
+.bluebtnclass {
+  background: #0841B4;
+  border: 1px solid #0841B4;
+}
+
+.bluebtnclass:hover {
+  background: #1f6de2;
+  border: 1px solid #1f6de2;
+}
+
+.redsbtnclass {
+  background: #f05050 !important;
+  border: 1px solid #f05050 !important;
+}
+
+.redsbtnclass:hover {
+  background: #ff7777 !important;
+  border: 1px solid #ff7777 !important;
+}
+.redsbtnclass.is-disabled {
+  background-color: #fab6b6 !important;
+  border-color: #fab6b6 !important;
+}
+.dwtb {
+  width: 500px;
+
+  .el-message-box__header {
+    text-align: center;
+    background: #eaeaea;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .el-message-box__title {
+    color: #555555;
+    font-weight: 600 !important;
+  }
+
+  .el-message-box__headerbtn .el-message-box__close {
+    display: block;
+  }
+
+  .el-message-box__btns>.el-button:nth-child(1) {
+    background: #FFFFFF;
+    color: #666;
+    padding: 11px 20px;
+    font-size: 14px;
+    border: 1px solid #CCC;
+  }
+
+  .el-message-box__btns>.el-button:nth-child(1):hover {
+    background: #ecf5ff;
+    color: #409eff;
+  }
+
+  .el-message-box__btns button:nth-child(2) {
+    background: #0841B4;
+    border: none;
+    color: #FFF;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .el-message-box__btns button:nth-child(2):hover {
+    background: #1f6de2;
+    border: none;
+    color: #FFF;
+  }
+
+  .el-message-box__btns button:nth-child(2) {
+    margin-left: 30px;
+  }
+
+  .el-message-box__content {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 25px 15px;
+  }
+
+  .el-message-box__btns {
+    text-align: center;
+  }
+}
+
+.dwyj {
+  width: 600px!important;
+  padding-bottom: 20px!important;
+
+  textarea {
+    max-width: 445px;
+    height: 100px;
+    width: 445px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+
+  }
+
+  .el-message-box__header {
+    text-align: center;
+    background: #eaeaea;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .el-message-box__title {
+    color: #555555;
+    font-weight: 600 !important;
+  }
+
+  .el-message-box__headerbtn .el-message-box__close {
+    display: block;
+  }
+
+  .el-message-box__btns>.el-button:nth-child(1) {
+    background: #FFFFFF;
+    color: #666;
+    padding: 11px 20px;
+    font-size: 14px;
+    border: 1px solid #CCC;
+  }
+
+  .el-message-box__btns>.el-button:nth-child(1):hover {
+    background: #ecf5ff;
+    color: #409eff;
+  }
+
+  .el-message-box__btns button:nth-child(2) {
+    background: #0841B4;
+    border: none;
+    color: #FFF;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .el-message-box__btns button:nth-child(2):hover {
+    background: #1f6de2;
+    border: none;
+    color: #FFF;
+  }
+
+  .el-message-box__btns button:nth-child(2) {
+    margin-left: 30px;
+  }
+
+  .el-message-box__content {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 25px 15px;
+  }
+
+  .el-message-box__btns {
+    text-align: center;
+    padding: 5px 15px 2 0px;
+  }
+}
+
+.tableclicksh:hover {
+  color: #3179e4 !important;
+}
+.shanchush:hover{
+  color: #f4bc00;
+}
